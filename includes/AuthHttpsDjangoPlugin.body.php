@@ -7,7 +7,7 @@ require_once('https_django_auth.php');
 
 function login_with_mw_params($username, $password) {
 	// get parameters from the mediawiki config
-	return login_django_postgres($username, $password,
+	return login_django_https($username, $password,
     	$url=$GLOBALS['wgAuthHttpsDjangoConfig']['DjangoLoginURL']);
 }
 
