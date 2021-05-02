@@ -1,0 +1,24 @@
+{
+	"name": "DjangoHttpsAuth",
+	"version": "1.0",
+	"author": [
+		"Tournesol"
+	],
+	"url": "https://github.com/tournesol-app/django_mediawiki_auth_https",
+	"descriptionmsg": "Authenticate with Django via https",
+	"type": "other",
+	"license-name": "MIT",
+	"AutoloadClasses": {
+		"AuthHttpsDjangoPlugin": "includes/AuthHttpsDjangoPlugin.php"
+	},
+	"manifest_version": 1,
+	"Hooks": {
+		"BeforeInitialize": "AuthHttpsDjangoPlugin::onBeforeInitialize"
+	},
+	"MessagesDirs": {
+		"PluggableAuth": [
+			"i18n"
+		]
+	}
+}
+
